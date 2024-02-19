@@ -1,31 +1,101 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
-body{
+body {
     background-color: grey;
 }
 
-.top-navbar{
+.top-navbar {
     background-color: white;
+    position: sticky;
+    display: flex;
     padding: 10px;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+    justify-content: space-between;
+    
 }
 
-.side-navbar{
-    background-color:#0e33eb;
+.top-navbar .left-section {
+    justify-content: flex-start;
+   
+}
+
+.top-navbar .left-section ul {
+    display: flex;
+    list-style: none;
+    padding: 5px;
+    
+}
+
+.top-navbar .left-section ul li {
+    margin-left: 10px;
+}
+
+.top-navbar .left-section ul li a{
+    color: #080000;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 15px;
+}
+
+.top-navbar .left-section ul li a:hover{
+    background-color: #f2f2f2;
+    color:#0a0000;
+}
+
+
+/* Navbar Right */
+.top-navbar .right-section {
+    display: flex;
+    align-items: center;
+    
+    justify-content: flex-end;
+    position: absolute;
+    right: 10px;
+
+}
+
+.top-navbar input[type="text"] {
+    padding: 5px;
+    border-radius: 15px;
+    margin-right: 10px;
+    width: 250px;
+    border: solid blue;
+
+}
+
+.top-navbar .right-section a {
+    margin-left: 10px;
+}
+
+.top-navbar img {
+
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Side Navbar */
+.side-navbar {
+    background-color: #0e33eb;
     width: 200px;
     float: left;
     height: 100vh;
 }
 
-.body-content{
+/* Body Content */
+.body-content {
     margin-left: 220px;
     padding: 20px;
 }
 
-.footer{
+/*  Footer */
+.footer {
     background-color: white;
     text-align: center;
     position: fixed;
