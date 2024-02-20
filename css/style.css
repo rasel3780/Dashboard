@@ -49,7 +49,7 @@ body {
 }
 
 
-/* Navbar Right */
+/* Navbar Right Section*/
 .top-navbar .right-section {
     display: flex;
     align-items: center;
@@ -86,6 +86,17 @@ body {
     width: 200px;
     float: left;
     height: 100vh;
+}
+
+.user-profile{
+    text-align: center;
+    padding: 20px;
+}
+
+.user-profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
 }
 
 /* Body Content */
