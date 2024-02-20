@@ -82,10 +82,12 @@ body {
 
 /* Side Navbar */
 .side-navbar {
-    background-color: #0e33eb;
+    background-color: #f4f4f4;
     width: 200px;
+    position:fixed;
     float: left;
     height: 100vh;
+    border-right: 1px solid #ddd;
 }
 
 .user-profile{
@@ -99,11 +101,42 @@ body {
     border-radius: 50px;
 }
 
+.side-navbar ul{
+    list-style-type: none;
+}
+
+.side-navbar li{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.side-navbar li:last-child {
+    border-bottom: none;
+}
+.side-navbar li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:#080000;
+    font-weight: bold;
+}
+
+.side-navbar li img{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+
+
 /* Body Content */
 .body-content {
     margin-left: 220px;
     padding: 20px;
 }
+
 
 /*  Footer */
 .footer {
