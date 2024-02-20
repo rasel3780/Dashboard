@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
 </head>
 <body>
     <!--Top Navbar-->
@@ -32,42 +34,48 @@
             <p>User name</p>
         </div>
         <ul>
-            <li><a href="#"><img src="/css//img/store-solid-24.png" alt="">Inventory</a></li>
-            <li><a href="#"><img src="./css/img/plane-alt-solid-24.png" alt="">Vendor </a></li>
-            <li><a href="#"><img src="./css/img/donate-heart-regular-24.png" alt="">Customer </a></li>
-            <li><a href="#"><img src="./css/img/package-solid-24.png" alt="">Orders</a></li>
-            <li><a href="#"><img src="./css/img/report-solid-24.png" alt="">Report</a></li>
-            <li><a href="#"><img src="./css/img/support-regular-24.png" alt="">Support</a></li>
-            <li><a href="#"><img src="./css/img/message-rounded-error-regular-24.png" alt="">FAQs</a></li>
-            <li><a href="#"><img src="./css/img/log-out-circle-regular-24.png" alt="">Logout</a></li>
+            <li><a href="#"><img src="/css//img/store-solid-24.png" >Inventory</a></li>
+            <li><a href="#"><img src="./css/img/plane-alt-solid-24.png" >Vendor </a></li>
+            <li><a href="#"><img src="./css/img/donate-heart-regular-24.png" >Customer </a></li>
+            <li><a href="#"><img src="./css/img/package-solid-24.png" >Orders</a></li>
+            <li><a href="#"><img src="./css/img/report-solid-24.png" >Report</a></li>
+            <li><a href="#"><img src="./css/img/support-regular-24.png" >Support</a></li>
+            <li><a href="#"><img src="./css/img/message-rounded-error-regular-24.png" >FAQs</a></li>
+            <li><a href="#"><img src="./css/img/log-out-circle-regular-24.png">Logout</a></li>
         </ul>
     </nav>
     <!--End Side Navbar-->
 
     <!--Main body content-->
+
+    <!--Card-->
     <div class="container">
         <div class="row">
             <div class="card">
+                <img src="./css/img/People.png">
                 <div class="content">
-                    <p>Total Products</p>
+                    <p>Total Employee</p>
                     <h3>100</h3>
                 </div>
             </div>
             <div class="card">
+                <img src="./css/img/Diversity.png">
                 <div class="content">
-                    <p>Total Products</p>
+                    <p>Categories</p>
                     <h3>100</h3>
                 </div>
             </div>
             <div class="card">
+                <img src="./css/img/Product.png">
                 <div class="content">
-                    <p>Total Products</p>
+                    <p>Total Product</p>
                     <h3>100</h3>
                 </div>
             </div>
             <div class="card">
+                <img src="./css/img/Box.png">
                 <div class="content">
-                    <p>Total Products</p>
+                    <p>Out of Stock</p>
                     <h3>100</h3>
                 </div>
             </div>
@@ -75,31 +83,43 @@
 
         <div class="row">
             <div class="card">
+                <img src="./css/img/Reception.png">
                 <div class="content">
-                    <p>Total Products</p>
+                    <p>Total Customer</p>
                     <h3>100</h3>
                 </div>
             </div>
             <div class="card">
+                <img src="./css/img/Credit Card Interest.png">
                 <div class="content">
-                    <p>Total Products</p>
+                    <p>Today's Sale</p>
                     <h3>100</h3>
                 </div>
             </div>
             <div class="card">
+                <img src="./css/img/Pay Date.png">
                 <div class="content">
-                    <p>Total Products</p>
+                    <p>Monthly Sales</p>
                     <h3>100</h3>
                 </div>
             </div>
             <div class="card">
+                <img src="./css/img/Plus1Year.png">
                 <div class="content">
-                    <p>Total Products</p>
+                    <p>Yearly Sales</p>
                     <h3>100</h3>
                 </div>
             </div>
         </div>
+        <div class="graph-container">
+            <canvas id="sales-chart"></canvas>
+        </div>
     </div>
+<!--END of Card-->
+
+<script src="./script/graphScript.js"></script>
+    
+
       
     <!--End Main body content-->
 
