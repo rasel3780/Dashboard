@@ -1,11 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
     <link rel="stylesheet" href="/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
+
 <body>
     <!--Top Navbar-->
     <nav class="top-navbar">
@@ -16,7 +20,7 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-       
+
         <div class="right-section">
             <input type="text" placeholder="Search.....">
             <a href="#"><img src="/css/img/bell-regular-24.png" alt="Notifications"></a>
@@ -32,28 +36,371 @@
             <p>User name</p>
         </div>
         <ul>
-            <li><a href="#"><img src="/css//img/store-solid-24.png" alt="">Inventory</a></li>
-            <li><a href="#"><img src="./css/img/plane-alt-solid-24.png" alt="">Vendor </a></li>
-            <li><a href="#"><img src="./css/img/donate-heart-regular-24.png" alt="">Customer </a></li>
-            <li><a href="#"><img src="./css/img/package-solid-24.png" alt="">Orders</a></li>
-            <li><a href="#"><img src="./css/img/report-solid-24.png" alt="">Report</a></li>
-            <li><a href="#"><img src="./css/img/support-regular-24.png" alt="">Support</a></li>
-            <li><a href="#"><img src="./css/img/message-rounded-error-regular-24.png" alt="">FAQs</a></li>
-            <li><a href="#"><img src="./css/img/log-out-circle-regular-24.png" alt="">Logout</a></li>
+            <li><a href="#"><img src="/css//img/store-solid-24.png">Inventory</a></li>
+            <li><a href="#"><img src="./css/img/plane-alt-solid-24.png">Vendor </a></li>
+            <li><a href="#"><img src="./css/img/donate-heart-regular-24.png">Customer </a></li>
+            <li><a href="#"><img src="./css/img/package-solid-24.png">Orders</a></li>
+            <li><a href="#"><img src="./css/img/report-solid-24.png">Report</a></li>
+            <li><a href="#"><img src="./css/img/support-regular-24.png">Support</a></li>
+            <li><a href="#"><img src="./css/img/message-rounded-error-regular-24.png">FAQs</a></li>
+            <li><a href="#"><img src="./css/img/log-out-circle-regular-24.png">Logout</a></li>
         </ul>
     </nav>
     <!--End Side Navbar-->
 
     <!--Main body content-->
-    <div class="body-content">
-        <h1>content</h1>
-    </div>  
-    <!--End Main body content-->
 
-    <!--Footer-->
+    <!--Card-->
+    <div class="container">
+        <div class="row">
+            <div class="card">
+                <img src="./css/img/People.png">
+                <div class="content">
+                    <p>Total Employee</p>
+                    <h3>10</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./css/img/Diversity.png">
+                <div class="content">
+                    <p>Categories</p>
+                    <h3>30</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./css/img/Product.png">
+                <div class="content">
+                    <p>Total Product</p>
+                    <h3>1350</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./css/img/Box.png">
+                <div class="content">
+                    <p>Out of Stock</p>
+                    <h3>30</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="card">
+                <img src="./css/img/Reception.png">
+                <div class="content">
+                    <p>Total Customer</p>
+                    <h3>378</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./css/img/Credit Card Interest.png">
+                <div class="content">
+                    <p>Today's Sale</p>
+                    <h3>৳5500</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./css/img/Pay Date.png">
+                <div class="content">
+                    <p>Monthly Sales</p>
+                    <h3>৳155000</h3>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./css/img/Plus1Year.png">
+                <div class="content">
+                    <p>Yearly Sales</p>
+                    <h3>৳125000</h3>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="visual-container">
+            <div class="graph-container">
+                <canvas id="line-chart"></canvas>
+            </div>
+            <div class="graph-container">
+                <canvas id="pie-chart"></canvas>
+            </div>
+        </div>
+        <script src="./script/graphScript.js"></script>
+        <!--End Of Card-->
+
+        <!--Order Table-->
+        <div class="table-title">
+            <h2>Order Table</h2>
+        </div>
+        <div class="table-container">
+            
+            <table>
+                <thead>
+                    <tr>
+                        <th>Customer Number</th>
+                        <th>Customer Name</th>
+                        <th>Order Number</th>
+                        <th>Order Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>12345</td>
+                        <td>Tamim</td>
+                        <td>001</td>
+                        <td>2024-02-15</td>
+                        <td>Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>54321</td>
+                        <td>Shakib</td>
+                        <td>002</td>
+                        <td>2024-02-16</td>
+                        <td>Processing</td>
+                    </tr>
+
+                    <tr>
+                        <td>67890</td>
+                        <td>Musfiq</td>
+                        <td>003</td>
+                        <td>2024-02-17</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>24680</td>
+                        <td>Mahmudulla</td>
+                        <td>004</td>
+                        <td>2024-02-18</td>
+                        <td>Processing</td>
+                    </tr>
+                    <tr>
+                        <td>13579</td>
+                        <td>Miraj</td>
+                        <td>005</td>
+                        <td>2024-02-19</td>
+                        <td>Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>97531</td>
+                        <td>Mustafiz</td>
+                        <td>006</td>
+                        <td>2024-02-20</td>
+                        <td>Processing</td>
+                    </tr>
+                    <tr>
+                        <td>86420</td>
+                        <td>Taskin</td>
+                        <td>007</td>
+                        <td>2024-02-21</td>
+                        <td>Delivered</td>
+                    </tr>
+                    <tr>
+                        <td>31415</td>
+                        <td>Anamul</td>
+                        <td>008</td>
+                        <td>2024-02-22</td>
+                        <td>Shipped</td>
+                    </tr>
+                    <tr>
+                        <td>27182</td>
+                        <td>Imrul</td>
+                        <td>009</td>
+                        <td>2024-02-23</td>
+                        <td>Processing</td>
+                    </tr>
+                    <tr>
+                        <td>81828</td>
+                        <td>Gazi</td>
+                        <td>010</td>
+                        <td>2024-02-24</td>
+                        <td>Shipped</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--End of Order Table-->
+
+        <!--Vendor Table-->
+        <div class="table-title">
+            <h2>Vendor Table</h2>
+        </div>
+        <div class=table-container>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Supplier ID</th>
+                        <th>Supplier Name</th>
+                        <th>Product ID</th>
+                        <th>Product Quantity</th>
+                        <th>Unit Price</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>101</td>
+                        <td>Supplier A</td>
+                        <td>001</td>
+                        <td>50</td>
+                        <td>৳10</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>102</td>
+                        <td>Supplier B</td>
+                        <td>002</td>
+                        <td>30</td>
+                        <td>৳15</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>103</td>
+                        <td>Supplier C</td>
+                        <td>003</td>
+                        <td>20</td>
+                        <td>৳12</td>
+                        <td>Out of Stock</td>
+                    </tr>
+                    <tr>
+                        <td>104</td>
+                        <td>Supplier D</td>
+                        <td>004</td>
+                        <td>40</td>
+                        <td>৳18</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>105</td>
+                        <td>Supplier E</td>
+                        <td>005</td>
+                        <td>60</td>
+                        <td>৳20</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>106</td>
+                        <td>Supplier F</td>
+                        <td>006</td>
+                        <td>25</td>
+                        <td>৳22</td>
+                        <td>Processing</td>
+                    </tr>
+                    <tr>
+                        <td>107</td>
+                        <td>Supplier G</td>
+                        <td>007</td>
+                        <td>55</td>
+                        <td>৳16</td>
+                        <td>In Stock</td>
+                    </tr>
+                    <tr>
+                        <td>108</td>
+                        <td>Supplier H</td>
+                        <td>008</td>
+                        <td>45</td>
+                        <td>৳25</td>
+                        <td>Processing</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!--End of Vendor Table-->
+
+        <!--Employee Table-->
+        <div class="table-title">
+            <h2>Employee Details</h2>
+          </div>
+          
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Employee ID</th>
+                  <th>Name</th>
+                  <th>Age</th>
+                  <th>Email</th>
+                  <th>Salary</th>
+                  <th>Designation</th>
+                </tr>
+              </thead>
+              <tbody>
+                <!-- Dummy row data -->
+                <tr>
+                  <td>001</td>
+                  <td>Jaman</td>
+                  <td>30</td>
+                  <td>jaman@example.com</td>
+                  <td>৳55000</td>
+                  <td>Business Development Manager</td>
+                </tr>
+                <tr>
+                  <td>002</td>
+                  <td>Mohammad</td>
+                  <td>25</td>
+                  <td>mohammad@example.com</td>
+                  <td>৳44500</td>
+                  <td>Marketing Executive</td>
+                </tr>
+                <tr>
+                  <td>003</td>
+                  <td>Shan</td>
+                  <td>40</td>
+                  <td>shan@example.com</td>
+                  <td>৳66000</td>
+                  <td>Market Research Analyst</td>
+                </tr>
+                <tr>
+                  <td>004</td>
+                  <td>Tamim</td>
+                  <td>35</td>
+                  <td>tamim@example.com</td>
+                  <td>৳55500</td>
+                  <td>Business Analyst</td>
+                </tr>
+                <tr>
+                  <td>005</td>
+                  <td>Rumana Aktar</td>
+                  <td>28</td>
+                  <td>rumana@example.com</td>
+                  <td>৳44800</td>
+                  <td>Marketing Manager</td>
+                </tr>
+                <tr>
+                  <td>006</td>
+                  <td>Tahmida</td>
+                  <td>32</td>
+                  <td>tahmida@example.com</td>
+                  <td>৳55200</td>
+                  <td>Business Consultant</td>
+                </tr>
+                <tr>
+                  <td>007</td>
+                  <td>Rahim</td>
+                  <td>45</td>
+                  <td>rahim@example.com</td>
+                  <td>৳66200</td>
+                  <td>Marketing Director</td>
+                </tr>
+                <tr>
+                  <td>008</td>
+                  <td>Menhaj</td>
+                  <td>29</td>
+                  <td>menhaj@example.com</td>
+                  <td>৳44900</td>
+                  <td>Business Development Executive</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          
+
+        <!--End of Employee Table-->
+
+    </div>
+
     <footer class="footer">
         footer
     </footer>
     <!--End Footer-->
 </body>
+
 </html>
