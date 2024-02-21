@@ -5,6 +5,7 @@
 }
 
 body {
+    min-height: 100vh;
     background-color: grey;
 }
 
@@ -135,6 +136,7 @@ body {
 .container {
     margin-left: 220px;
     padding: 20px;
+    min-height: calc(100vh-20px);
 }
 .row{
     
@@ -150,7 +152,7 @@ body {
     box-sizing: border-box;
     border-radius: 15px;
     text-align: center;
-    width: 280px;
+    width: 300px;
 }
 
 .card .content{
@@ -161,21 +163,71 @@ body {
     margin-bottom: 10px;
 }
 
+
+.visual-container{
+    display: flex;
+    justify-content: space-between;
+}
+
 .graph-container{
     margin-top: 20px;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 15px;
     box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px;
     height: 300px;
-    width: 600px;
+    width: calc(50% - 10px);
 }
+
+.table-container{
+    margin-top: 20px;
+    height: 200px;
+    overflow-y: auto;
+    position: relative;
+    border-radius: 5px;
+
+
+}
+
+.table-title h2{
+    text-align: center;
+    background-color: #fefafa;
+    border-radius: 15px;
+    margin: 20px 500px;
+    position: relative;
+}
+
+.table-container table{
+  width: 100%;
+  border-collapse:collapse;
+  border-spacing: 0;
+  
+} 
+
+.table-container th, .table-container td{
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.table-container th{
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.table-container thead{
+   z-index: 2;
+}
+
+
 
 /*  Footer */
 .footer {
     background-color: white;
     text-align: center;
-    position: fixed;
+    position:relative;
     width: 100%;
     padding: 10px;
     bottom: 0;
