@@ -6,11 +6,11 @@
 
 body {
     min-height: 100vh;
-    background-color: grey;
+    background-color: rgb(241, 241, 241);
 }
 
 .top-navbar {
-    background-color: white;
+    background-color: rgb(79, 81, 238);
     position: sticky;
     display: flex;
     padding: 10px;
@@ -18,35 +18,36 @@ body {
     top: 0;
     z-index: 1000;
     justify-content: space-between;
-    
+
 }
 
 .top-navbar .left-section {
     justify-content: flex-start;
-   
+
 }
 
 .top-navbar .left-section ul {
     display: flex;
     list-style: none;
     padding: 5px;
-    
+
 }
 
 .top-navbar .left-section ul li {
     margin-left: 10px;
 }
 
-.top-navbar .left-section ul li a{
-    color: #080000;
+.top-navbar .left-section ul li a {
+    color: #f6f5f5;
     text-decoration: none;
     padding: 5px 5px;
     border-radius: 15px;
+    font-weight: bold;
 }
 
-.top-navbar .left-section ul li a:hover{
+.top-navbar .left-section ul li a:hover {
     background-color: #f2f2f2;
-    color:#0a0000;
+    color: #0a0000;
 }
 
 
@@ -54,7 +55,7 @@ body {
 .top-navbar .right-section {
     display: flex;
     align-items: center;
-    
+
     justify-content: flex-end;
     position: absolute;
     right: 10px;
@@ -66,8 +67,7 @@ body {
     border-radius: 15px;
     margin-right: 10px;
     width: 250px;
-    border: solid blue;
-
+    border: solid rgb(0, 0, 6);
 }
 
 .top-navbar .right-section a {
@@ -83,51 +83,58 @@ body {
 
 /* Side Navbar */
 .side-navbar {
-    background-color: #f4f4f4;
+    background-color: #cfeff3;
     width: 200px;
-    position:fixed;
+    position: fixed;
     float: left;
     height: 100vh;
     border-right: 1px solid #ddd;
+    color: #080000;
+
 }
 
-.user-profile{
+.user-profile {
     text-align: center;
     padding: 20px;
 }
 
-.user-profile img{
+.user-profile img {
     width: 50px;
     height: 50px;
     border-radius: 50px;
 }
 
-.side-navbar ul{
+.side-navbar ul {
     list-style-type: none;
+
 }
 
-.side-navbar li{
+.side-navbar li {
     display: flex;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid #ffffff;
 }
 
 .side-navbar li:last-child {
     border-bottom: none;
 }
-.side-navbar li a{
+
+.side-navbar li a {
     display: flex;
     align-items: center;
     text-decoration: none;
-    color:#080000;
+    color: #080000;
     font-weight: bold;
+
+
 }
 
-.side-navbar li img{
+.side-navbar li img {
     width: 20px;
     height: 20px;
     margin-right: 10px;
+
 }
 
 
@@ -138,16 +145,17 @@ body {
     padding: 20px;
     min-height: calc(100vh-20px);
 }
-.row{
-    
+
+.row {
+
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 20px;
 }
 
-.card{
-    background-color: #f0f0f0;
+.card {
+    background-color: #cfcfcf;
     padding: 30px;
     box-sizing: border-box;
     border-radius: 15px;
@@ -155,79 +163,84 @@ body {
     width: 300px;
 }
 
-.card .content{
+.card .content {
     font-size: 16px;
 }
 
-.card .content p{
+.card .content p {
     margin-bottom: 10px;
 }
 
 
-.visual-container{
+.visual-container {
     display: flex;
     justify-content: space-between;
 }
 
-.graph-container{
+.graph-container {
     margin-top: 20px;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 15px;
-    box-shadow:0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px;
     height: 300px;
     width: calc(50% - 10px);
 }
 
-.table-container{
+.table-container {
     margin-top: 20px;
     height: 200px;
     overflow-y: auto;
     position: relative;
     border-radius: 5px;
+    background-color: white;
 
 
 }
 
-.table-title h2{
+.table-title h2 {
     text-align: center;
-    background-color: #fefafa;
+    background-color: #0303032f;
     border-radius: 15px;
-    margin: 20px 500px;
+    margin: 30px 500px;
     position: relative;
 }
 
-.table-container table{
-  width: 100%;
-  border-collapse:collapse;
-  border-spacing: 0;
-  
-} 
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
 
-.table-container th, .table-container td{
-    padding: 8px;
-    text-align: left;
-    border: 1px solid #ddd;
 }
 
-.table-container th{
-    background-color: #f2f2f2;
+.table-container th,
+.table-container td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #ffffff;
+
+}
+
+.table-container th {
+    background-color: #75bdf0;
     position: sticky;
     top: 0;
     z-index: 1;
 }
 
-.table-container thead{
-   z-index: 2;
+.table-container tr:nth-child(even) {
+    background: #d0e4ebf7;
 }
 
-
+.table-container thead {
+    z-index: 2;
+}
 
 /*  Footer */
 .footer {
-    background-color: white;
+    background-color: rgba(187, 182, 182, 0.644);
     text-align: center;
-    position:relative;
+    position: relative;
     width: 100%;
     padding: 10px;
     bottom: 0;
