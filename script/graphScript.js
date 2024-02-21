@@ -16,7 +16,7 @@ var myChart = new Chart(ctx, {
     }]
   },
   options: {
-    responsive: true, 
+    responsive: true,
     maintainAspectRatio: false,
     width: 600,
     height: 300,
@@ -34,8 +34,8 @@ var myChart = new Chart(ctx, {
 var topFiveCategoriesData = {
   labels: ['Medicine', 'Cosmetic', 'Groceries', 'Cloth', 'Baby Food'],
   datasets: [{
-    data: [300, 200, 150, 100, 50], 
-    backgroundColor: ['#000ce8', '#0fe800', '#fff700', '#f2700c', '#c002e6'], // Sample background colors for each category
+    data: [300, 200, 150, 100, 50],
+    backgroundColor: ['#000ce8', '#0fe800', '#fff700', '#f2700c', '#c002e6'],
   }]
 };
 
@@ -44,12 +44,12 @@ var pieChart = new Chart(ctx, {
   type: 'pie',
   data: topFiveCategoriesData,
   options: {
-    responsive: true, 
-    maintainAspectRatio: false, 
+    responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
-        display: true, 
-        position: 'right', 
+        display: true,
+        position: 'right',
       },
       title: {
         display: true,
